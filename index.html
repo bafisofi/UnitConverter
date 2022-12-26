@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+     <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <section class="header">
+                <div class="mode-container">
+                    <input type="checkbox" id="mode" name="mode" >
+                    <label for="mode" id="mode"> Toggle Dark Mode</label>
+                </div>    
+                <h1 class="name">Metric/Imperial Unit Conversion</h1>
+                <input id="number"  type="number"/>
+                <button id="action-btn">Convert</button>
+            </section>
+            <section id="result" class="light-result">
+                <div id="length" class="conversion light-conversion">
+                    <p class="name-conversion">Length (Meter/Feet)</p>
+                    <p class="result-conversion" id="result-length"></p>
+                </div>
+                <div id="volume" class="conversion light-conversion">
+                    <p class="name-conversion">Volume (Liters/Gallons)</p>
+                    <p class="result-conversion" id="result-volume"></p>
+                </div>
+                <div id="mass" class="conversion light-conversion">
+                    <p class="name-conversion">Mass (Kilograms/Pounds)</p>
+                    <p class="result-conversion"id="result-mass"></p>
+                </div>
+            </section>
+        </div>    
+        <script src="index.js"></script>
+    </body>
+</html>
